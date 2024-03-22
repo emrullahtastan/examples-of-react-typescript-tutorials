@@ -5,6 +5,8 @@ import {PersonList} from "./components/PersonList";
 import {Status} from "./components/Status";
 import {Heading} from "./components/Heading";
 import {Oscar} from "./components/Oscar";
+import {Button} from "./components/Button";
+import {Input} from "./components/Input";
 
 function App() {
     const personName = {first: 'Bruce', last: 'Wayne'}
@@ -22,6 +24,12 @@ function App() {
             <Greet name='Wishwas' isLoggedIn={false}/>
             <Person name={personName}/>
             <PersonList names={nameList}/>
+            <Button handleClick={(event, id) => {
+                console.log("Button clicked.", event, id)
+            }}/>
+            <Input value={''} handleChange={(event) => {
+                console.log(event)
+            }}/>
         </div>
     );
 }
