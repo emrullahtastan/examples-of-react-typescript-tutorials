@@ -1,9 +1,11 @@
 import './App.css';
-import {Counter} from "./components/class/Counter";
+import {Profile} from "./components/auth/Profile";
+import {Private} from "./components/auth/Private";
+
 function App() {
     return (
         <div className="App">
-           <Counter message={'This is a message'}/>
+            <Private isLoggedIn={true} component={Profile}/>
         </div>
     );
 }
