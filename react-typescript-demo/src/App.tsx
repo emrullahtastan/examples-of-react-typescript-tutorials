@@ -6,7 +6,7 @@ function App() {
         <div className="App">
             <Text as={'h1'} size={'lg'}>Heading</Text>
             <Text as={'p'} size={'md'}>Paragraph</Text>
-            <Text as={'label'} size={'sm'} color={'secondary'} htmlFor={'someId'}>Label</Text>
+            <Text as={'a'} href={"https://trt.net.tr"}>Label</Text>
         </div>
     );
 }
